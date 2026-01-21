@@ -1,14 +1,30 @@
-# Terminal Commands (This Session)
+# Instructions (Terminal Commands)
 
-The following commands were executed in the terminal during this session:
+Use the following commands in order to set up the project, install dependencies,
+run the app, and format imports.
 
- pip3 install uv
- uv add langchain
- uv add python-dotenv black isort 
- uv add langchain-ollama
+## 1) Install uv (once)
 
- uv run python main.py
+```sh
+pip3 install uv
+```
 
- uv run isort .
- 
+## 2) Add project dependencies
 
+```sh
+uv add langchain
+uv add python-dotenv black isort
+uv add langchain-ollama
+```
+
+## 3) Run the app
+
+```sh
+uv run python main.py
+```
+
+## 4) Format imports with isort
+
+```sh
+uv run isort .
+```
